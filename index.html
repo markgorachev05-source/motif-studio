@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#030403" />
+    <meta name="description" content="MOTIF is an independent creative studio building vivid worlds for thoughtful brands." />
+    <title>MOTIF — creative worlds with feeling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=GFS+Didot&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="scene.js"></script>
+  </head>
+  <body>
+    <div class="scene-wrap" aria-hidden="true">
+      <canvas id="world"></canvas>
+      <div class="scene-fallback"><span class="fallback-orb"></span><span class="fallback-vine"></span></div>
+      <div class="scene-wash"></div>
+    </div>
+
+    <header class="site-header">
+      <a class="pill brand-pill" href="#home" aria-label="MOTIF Studio, home">MOTIF <span>®</span></a>
+      <button class="pill menu-trigger" type="button" aria-haspopup="dialog" aria-controls="menu-panel" aria-expanded="false">INDEX <span class="menu-mark">+</span></button>
+    </header>
+
+    <dialog class="menu-panel" id="menu-panel" aria-label="Site navigation">
+      <div class="menu-top"><span class="menu-kicker">MOTIF® / INDEX</span><button class="pill menu-close" type="button" aria-label="Close menu">CLOSE <span>×</span></button></div>
+      <nav class="menu-links" aria-label="Main navigation">
+        <a href="#home"><small>01</small>Home</a>
+        <a href="#studio"><small>02</small>Studio</a>
+        <a href="#services"><small>03</small>What we do</a>
+        <a href="#work"><small>04</small>Selected work</a>
+        <a href="#contact"><small>05</small>Get in touch</a>
+      </nav>
+      <p class="menu-foot">Independent by nature. Intentional by design.</p>
+    </dialog>
+
+    <main>
+      <section class="screen hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-meta"><span>INDEPENDENT CREATIVE PRACTICE</span><span>NEW YORK · EVERYWHERE</span></div>
+        <div class="hero-lockup">
+          <p class="eyebrow reveal">STRATEGY · IMAGE · EXPERIENCE</p>
+          <h1 id="hero-title" class="hero-title reveal"><span>MAKE</span><span>ROOM</span><i>for wonder</i></h1>
+          <p class="hero-deck reveal">An independent creative studio making<br />the intangible impossible to ignore.</p>
+          <a class="text-link reveal" href="#studio">ENTER THE STUDIO <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-bottom"><span>SCROLL TO FEEL SOMETHING</span><span class="scroll-tick" aria-hidden="true">↓</span><span>40° 43′ 55″ N / 73° 59′ 11″ W</span></div>
+      </section>
+
+      <section class="screen studio" id="studio" aria-labelledby="studio-title">
+        <div class="section-index reveal"><span>01 / A POINT OF VIEW</span><span>FEELING IS A FORM OF KNOWING</span></div>
+        <div class="editorial-plate reveal">
+          <p class="eyebrow">WE MAKE THINGS MEAN SOMETHING</p>
+          <h2 id="studio-title">A world is more<br />than what you see.</h2>
+          <p class="plate-copy">We shape brands from the inside out — finding the pulse, building the language, and giving it a form people can feel.</p>
+          <span class="plate-index">M · 001 / 025</span>
+        </div>
+        <div class="studio-caption"><span>INTUITION, WITH INTENTION.</span><span>MOVE THROUGH THE WORLD ↗</span></div>
+      </section>
+
+      <section class="screen services" id="services" aria-labelledby="services-title">
+        <div class="section-index reveal"><span>02 / OUR PRACTICE</span><span>IDEAS, GIVEN A BODY</span></div>
+        <div class="services-heading reveal"><p class="eyebrow">FROM FIRST INSTINCT TO FULL EXPRESSION</p><h2 id="services-title">WHAT WE MAKE</h2></div>
+        <div class="services-grid reveal">
+          <article class="service-column"><span class="service-count">01 — 03</span><h3>MEANING</h3><ul><li>Brand strategy</li><li>Positioning &amp; naming</li><li>Verbal identity</li></ul></article>
+          <article class="service-column"><span class="service-count">04 — 06</span><h3>MATTER</h3><ul><li>Visual identity</li><li>Art direction</li><li>Campaign worlds</li></ul></article>
+          <article class="service-column"><span class="service-count">07 — 09</span><h3>MOVEMENT</h3><ul><li>Digital experiences</li><li>Spatial storytelling</li><li>Launch &amp; culture</li></ul></article>
+        </div>
+        <p class="services-note reveal">ONE STUDIO, MANY WAYS TO MAKE A MARK.</p>
+      </section>
+
+      <section class="screen work" id="work" aria-labelledby="work-title">
+        <div class="section-index reveal"><span>03 / A FEW GOOD WORLDS</span><span>THE WORK, IN ITS OWN WORDS</span></div>
+        <div class="work-intro reveal"><p class="eyebrow">PHYSICAL · DIGITAL · METAPHYSICAL</p><h2 id="work-title">MADE WITH<br />FEELING.</h2></div>
+        <ol class="project-list reveal">
+          <li><span class="project-number">01</span><span class="project-name">GARDEN AFTER DARK</span><span class="project-type">A NEW KIND OF BOTANICAL</span></li>
+          <li><span class="project-number">02</span><span class="project-name">SUNDAY SERVICE</span><span class="project-type">HOSPITALITY, REIMAGINED</span></li>
+          <li><span class="project-number">03</span><span class="project-name">FORM / FIELD</span><span class="project-type">OBJECTS FOR EVERY DAY</span></li>
+          <li><span class="project-number">04</span><span class="project-name">SOFT SIGNAL</span><span class="project-type">A CULTURE IN BLOOM</span></li>
+          <li><span class="project-number">05</span><span class="project-name">OTHER WAYS</span><span class="project-type">TRAVEL WITH INTENTION</span></li>
+        </ol>
+        <p class="work-foot reveal">A SMALL SELECTION OF COLLABORATIONS MADE TO LAST.</p>
+      </section>
+
+      <section class="screen contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-index reveal"><span>04 / THE NEXT THING</span><span>LET'S MAKE A LITTLE MAGIC</span></div>
+        <div class="contact-card reveal">
+          <p class="eyebrow">GOOD THINGS BEGIN WITH A HELLO</p>
+          <h2 id="contact-title">Have a feeling<br />about something?</h2>
+          <a class="contact-link" href="mailto:hello@motif.studio?subject=Let%27s%20make%20something">TELL US ABOUT IT <span aria-hidden="true">↗</span></a>
+          <div class="contact-card-foot"><span>NEW BUSINESS / OPEN</span><span>HELLO@MOTIF.STUDIO</span></div>
+        </div>
+        <footer class="site-footer"><a href="#home" class="footer-mark">MOTIF<span>®</span></a><span>INDEPENDENT BY NATURE. INTENTIONAL BY DESIGN.</span><a href="#home" class="back-top">BACK TO THE TOP ↑</a></footer>
+      </section>
+    </main>
+
+    <div class="scene-status" id="scene-status" role="status" aria-live="polite">COMPOSING THE WORLD…</div>
+    <script src="ui.js" defer></script>
+  </body>
+</html>
